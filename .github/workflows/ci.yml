@@ -59,7 +59,7 @@ jobs:
               whoami && \
               pwd && \
               ls && \
-              curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python3 && \
+              pip install poetry && \
               poetry install && \
               poetry run pytest && \
               deactivate'
